@@ -1,6 +1,6 @@
-# Project Title
+# De-sounding Echo Chambers
 
-An extensive exploration of social polarization dynamics within synthetic online social networks.
+An exploration of social polarization dynamics and echo chambers within online social networks.
 
 ## Table of Contents
 
@@ -28,13 +28,13 @@ To get started with the simulation, you need to set up the project environment u
 
 The simulation relies on four structured data files to model the social network and its dynamics. Below is the expected format and description of each file:
 
-1. `community_info.csv` - This file contains details about the identified communities within the social network, with columns for community labels, unique identifiers, ideological alignment, and member count.
+1. `community_info.csv` - This file contains details about the identified communities within the social network, with columns for community labels, unique identifiers, ideological alignment (where `1` signifies an ideological community and `0` indicates no ideological behavior), and member count. 
 
     **Example Entry:**
     ```
     label, id, ideological, count
     red, 44123, 1, 2550
-    blue, 44124, 1, 2550
+    blue, 44124, 0, 2550
     ```
 
 2. `edge_info.csv` - Provides metadata about the different types of edges or relationships that can exist within the social network graph, including post, repost, membership, and follow relationships.
@@ -103,9 +103,9 @@ After setting up the project, generate synthetic datasets or use existing datase
 
 ```sh
 poetry run python src/main.py --dataset synth_polarization --condition <CONDITION> --confirmation_bias <BIAS> [--cuda]
+```
 
-
-Replace <CONDITION> and <BIAS> with appropriate values, and include --cuda if you are utilizing a CUDA environment.
+Replace `<CONDITION>` with one of the following conditions: `epistemic`, `ideological`, or `conditional_ideological`. Set `<BIAS>` to a value between `0.0` (no acceptance) and `1.0` (full acceptance). Include `--cuda` if you are utilizing a CUDA environment for improved performance.
 
 ## Evaluating Results
 
@@ -116,14 +116,16 @@ To track and evaluate the state of the simulation:
    poetry run jupyter lab
 2. Navigate to the notebooks/ directory and open either evaluate.ipynb or evaluate_multiple.ipynb.
 
-Contributing
+## Contributing
 
 As this is still a work in progress, contributions to this project are greatly appreciated!
 
-Your Name
+## Creators
+
+Tim Donkers
 
     https://github.com/your-github
 
-License
+## License
 
 This project is open source and available under the MIT License.
