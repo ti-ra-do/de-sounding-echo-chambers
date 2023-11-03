@@ -86,8 +86,8 @@ To set up the project, follow these steps:
 
 2. Clone the repository and navigate to the project directory:
     ```sh
-    git clone https://your-repository-url.git
-    cd your-repository-name
+    git clone https://github.com/ti-ra-do/de-sounding-echo-chambers.git
+    cd de-sounding-echo-chambers
     ```
 
 3. Install dependencies using Poetry:
@@ -124,7 +124,7 @@ As this is still a work in progress, contributions to this project are greatly a
 
 Tim Donkers
 
-    https://github.com/your-github
+    https://github.com/ti-ra-do
 
 ## License
 
