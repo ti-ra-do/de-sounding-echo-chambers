@@ -1,0 +1,32 @@
+{
+    "red": {
+        "centrality": 1.0,
+        "ideological": 1,
+        "num_members": {"members": 500, "gatekeepers": 20},
+        "num_followers": {"members": 5, "gatekeepers": 40},
+        "connection_probs": {
+            "members":     {"red": 0.9, "blue": 0.0, "green": 0.1},
+            "gatekeepers": {"red": 0.9, "blue": 0.0, "green": 0.1}
+        }
+    },
+    "blue": {
+        "centrality": 1.0,
+        "ideological": 1,
+        "num_members": {"members": 500, "gatekeepers": 20},
+        "num_followers": {"members": 5, "gatekeepers": 40},
+        "connection_probs": {
+            "members":     {"red": 0.0, "blue": 0.9, "green": 0.1},
+            "gatekeepers": {"red": 0.0, "blue": 0.9, "green": 0.1}
+        }
+    },
+    "green": {
+        "centrality": 1.0,
+        "ideological": 0,
+        "num_members": {"members": 4000, "gatekeepers": 100},
+        "num_followers": {"members": 5, "gatekeepers": 40},
+        "connection_probs": {
+            "members":     {"red": 0.1, "blue": 0.1, "green": 0.8},
+            "gatekeepers": {"red": 0.2, "blue": 0.2, "green": 0.6}
+        }
+    }
+}

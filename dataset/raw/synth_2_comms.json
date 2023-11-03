@@ -1,0 +1,22 @@
+{
+    "red": {
+        "centrality": 1.0,
+        "ideological": 1,
+        "num_members": {"members": 2500, "gatekeepers": 50},
+        "num_followers": {"members": 5, "gatekeepers": 40},
+        "connection_probs": {
+            "members":     {"red": 0.5, "blue": 0.5},
+            "gatekeepers": {"red": 0.5, "blue": 0.5}
+        }
+    },
+    "blue": {
+        "centrality": 1.0,
+        "ideological": 1,
+        "num_members": {"members": 2500, "gatekeepers": 50},
+        "num_followers": {"members": 5, "gatekeepers": 40},
+        "connection_probs": {
+            "members":     {"red": 0.5, "blue": 0.5},
+            "gatekeepers": {"red": 0.5, "blue": 0.5}
+        }
+    }
+}

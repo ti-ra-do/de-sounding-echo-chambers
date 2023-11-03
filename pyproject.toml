@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "2022-echo-chamber"
+version = "0.1.0"
+description = "Simulating Social Polarization in Online Social Networks"
+authors = ["Tim Donkers <tim.donkers@uni-due.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.7.17"
+numpy = "^1.25.2"
+pandas = "^2.1.0"
+scikit-learn = "^1.3.0"
+pytorch = "^1.0.2"
+torchvision = "^0.15.2"
+networkx = "^3.1"
+tqdm = "^4.66.1"
+jupyterlab = "^4.0.5"
+python-louvain = "^0.16"
+leidenalg = "^0.10.1"
+tensorboardX = "^2.6.2.2"
+matplotlib = "^3.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
